@@ -1,3 +1,5 @@
+Spotify Application project using Spotify Web API. React.js CSS Flexbox frontend and Node.js for OAuth backend.
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
