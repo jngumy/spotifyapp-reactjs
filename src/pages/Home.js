@@ -5,8 +5,7 @@ import {UserBar} from '../components/UserBar'
 import '../css/App.css';
 import '../css/props.css'
 
-import { faHome } from "@fortawesome/free-solid-svg-icons";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+
 
 export class Home extends Component{
     
@@ -75,6 +74,8 @@ export class Home extends Component{
         return(
         <div  >
             <UserBar api = {this.props.api}/>
+        
+           
             <div className ="now-playing">
             {
                 (this.state.nowPlaying.playing) 

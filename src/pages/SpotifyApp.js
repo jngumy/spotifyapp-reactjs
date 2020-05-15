@@ -49,11 +49,7 @@ export default class SpotifyApp extends Component {
               sidebar: () => <div>My Playlists!</div>,
               main: () => < MyPlaylists api = {this.props.api} />
             },
-            {
-                path:'/myplaylists/:id',
-                main: () => <PlayListDetail api = {this.props.api}/>,
-                exact: true
-            },
+          
             {
               path: "/localplaylists",
               sidebar: () => <div>Local Playlists!</div>,
@@ -68,8 +64,9 @@ export default class SpotifyApp extends Component {
                     <div className ="sidebar fixed">
                         <a href = "/" className = "logo bl">
                             <img alt= "logo" src ={logo} className = "bl"/>
+                           
                         </a>
-
+                        
                         <ul className = "nav">
                             <li id ="search">
                                 <NavLink activeClassName = "active-li" className = "nav-item"to="/search">  <FontAwesomeIcon className = "li-icon" icon={faSearch} />Search Tracks</NavLink>
@@ -99,6 +96,7 @@ export default class SpotifyApp extends Component {
                             children={<route.main />}
                         />
                         ))}
+                        <Route path= '/playlist/:id' render={(props) => <PlayListDetail {...props} api={this.props.api} />}/>
                     </Switch>
                     </div>
                 </div>

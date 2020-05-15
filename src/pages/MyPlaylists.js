@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import {UserPlaylists} from '../components/UserPlaylists'
+import {UserBar} from '../components/UserBar'
 
 import '../css/App.css';
 import '../css/props.css'
@@ -23,9 +24,13 @@ export class MyPlaylists extends Component{
     
     render(){
         return(
-        <UserPlaylists
-            items = {this.state.items}
-        />
+            <div>
+                <UserBar api = {this.props.api}/>
+                <UserPlaylists
+                    items = {this.state.items}
+                />
+            </div>
+     
         );
     }
 }

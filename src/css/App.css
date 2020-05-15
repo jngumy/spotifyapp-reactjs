@@ -1,7 +1,13 @@
+
+* {
+  font-family: "Proxima Nova", "Roboto";
+}
+
 .App {
   text-align: center;
   background-color: rgb(7, 15, 20)50, 115, 115);
 }
+
 
 .App-logo {
   height: 40vmin;
@@ -33,6 +39,7 @@
   left: 20%;
   font-size: calc(10px + 2vmin);
   background-image: linear-gradient(rgb(17, 13, 13), rgb(41, 38, 38))  ;
+  
 }
 
 
@@ -64,7 +71,7 @@
    margin-right: 20px;
    padding-top: 20px;
    padding-bottom: 20px;
-   font-size: 16px;
+   font-size: 15px;
    color: grey;
    
 }
@@ -95,7 +102,8 @@
 	font-size:15px;
 	font-weight:bold;
 	padding:17px 31px;
-	text-decoration:none;
+  text-decoration:none;
+  
 
 }
 .spot-button:hover {
@@ -265,4 +273,111 @@
 
 .button-search {
   float:left;
+}
+
+.user-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 10px;
+  margin-left:auto;
+  margin-right: 5%;
+  font-size: 14px;
+  font-weight: bold;
+  width: 150px;
+  height: 30px;
+  border-radius: 20px;
+  background-color: black;
+
+}
+
+.user-icon {
+  color:grey;
+
+}
+
+.playlist-detail-container {
+  display: flex;
+  align-items: center;
+  justify-content: baseline;
+  background-image: linear-gradient(rgb(104, 100, 104), rgb(36, 34, 34))  ;
+}
+
+.playlist-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 250px;
+  float: left;
+}
+
+.playlist-img{
+  width: 250px;
+}
+
+.playlist-info-wrapper{
+  margin-left: 20px;
+   width: 70%;
+  text-align: left;
+  float: left;
+}
+
+.playlist-info-wrapper h1 {
+  width: 100%;
+  font-size: 80px;
+  font-weight: bold;
+  margin: 20px 0;
+}
+ 
+.playlist-info-wrapper h4 {
+ line-height: 20px;
+ margin:2px;
+ font-size:15px;
+ color: rgb(228, 226, 220)
+}
+
+.playlist-tracks-wrapper {
+
+}
+
+.playlist-tracks-wrapper ul {
+  
+}
+
+.playlist-tracks-wrapper ul li{
+  padding: 16px 16px;
+  width:93%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+  opacity: 0.8;
+  transition: 0.3s;
+
+  
+}
+
+.li-title {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.playlist-tracks-wrapper ul li h2{
+  margin: 0;
+  padding:0;
+  font-size:15px;
+  font-weight: bold; 
+}
+
+.playlist-tracks-wrapper ul li h4{
+  margin: 0;
+  padding:0;
+  font-size:13px;
+  font-weight: bold; 
+  color: grey;
+} 
+.playlist-tracks-wrapper ul li:hover{
+  opacity: 1;
+  background-image: linear-gradient(rgb(29, 25, 29), rgb(41, 38, 38))  ;
+  color:rgb(61, 212, 47);
 }

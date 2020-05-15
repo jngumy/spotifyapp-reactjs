@@ -1,5 +1,5 @@
 import React from 'react'
-import {NavLink} from 'react-router-dom'
+import {Link} from 'react-router-dom'
 export const UserPlaylists = (props) => {
     
     const {items} = props
@@ -9,7 +9,7 @@ export const UserPlaylists = (props) => {
             <div className = "cards-list">
                 {
                     items.map((playlist, index) => 
-                    <NavLink  to ={`/myplaylists/${playlist.id}`}>
+                    <Link key = {index} to ={`/playlist/${playlist.id}`}>
                         <div className = "card " key = {index}>
                             <div className= "card_image">
                                 <img alt = "img" src = {playlist.images[0].url} />
@@ -19,7 +19,7 @@ export const UserPlaylists = (props) => {
                             </div>
                 
                         </div>
-                    </NavLink>
+                    </Link>
                     )
                 }
             </div>
