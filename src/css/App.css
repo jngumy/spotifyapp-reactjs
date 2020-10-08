@@ -1,6 +1,18 @@
 
 * {
   font-family: "Proxima Nova", "Roboto";
+  
+}
+
+html {
+  height: 100%;
+}
+body {
+  height:100%;
+  margin: 0;
+  background-image: linear-gradient(rgb(17, 13, 13), rgb(41, 38, 38))  ;
+  background-repeat: no-repeat;
+  background-attachment: fixed ;
 }
 
 .App {
@@ -14,6 +26,9 @@
   pointer-events: none;
 }
 
+.loader {
+  margin: auto;
+}
 
 .App-header {
   background-color: #282c34;
@@ -34,12 +49,9 @@
 .container {
   margin-left: 20%;
   color:white;
-  min-height: 1200px;
   width: 80%;
   left: 20%;
   font-size: calc(10px + 2vmin);
-  background-image: linear-gradient(rgb(17, 13, 13), rgb(41, 38, 38))  ;
-  
 }
 
 
@@ -189,14 +201,16 @@
   width: 90%;
   margin-left: auto;
   margin-right: auto;
-  display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  grid-auto-rows: auto;
+  grid-gap: 1rem;
 }
 
 
 
 .card {
+  
   margin: 10px 0;
   width: 200px;
   padding:10px;
@@ -214,8 +228,8 @@
 }
 
 .card .card_image img {
-  width: inherit;
-  height: inherit;
+  width: 100%;
+  height: 100%;
  
   
 }
@@ -241,8 +255,7 @@
 
 @media all and (max-width: 450px) {
   .card-list {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
+    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
   }
 
   .card {
@@ -263,6 +276,9 @@
 }
 
 .container-search {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   margin: 2% 0;
   width: 80%;
   margin-left: auto;
@@ -336,13 +352,7 @@
  color: rgb(228, 226, 220)
 }
 
-.playlist-tracks-wrapper {
 
-}
-
-.playlist-tracks-wrapper ul {
-  
-}
 
 .playlist-tracks-wrapper ul li{
   padding: 16px 16px;
