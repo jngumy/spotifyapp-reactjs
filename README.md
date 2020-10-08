@@ -1,4 +1,16 @@
-Spotify Application project using Spotify Web API. React.js CSS Flexbox frontend and Node.js for OAuth backend.
+## spotifyapp-reactjs
+
+Spotify Application project using Spotify Web API. React.js CSS Flexbox frontend and Node.js for OAuth backend. You can log in with your spotify account and visualize your playlists , see you top 10 favourite tracks and check the current "Now Playing" track. Some features like create a local playlist or search for an specific song are coming soon.
+
+For more information about the Spotify public API please go to https://developer.spotify.com/documentation/web-api/
+
+Some preview:
+
+![img](https://raw.githubusercontent.com/jngumy/spotifyapp-reactjs/master/images/project-figure-2.png)
+![img](https://raw.githubusercontent.com/jngumy/spotifyapp-reactjs/master/images/project-figure-3.png)
+![img](https://raw.githubusercontent.com/jngumy/spotifyapp-reactjs/master/images/project-figure-4.png)
+![img](https://raw.githubusercontent.com/jngumy/spotifyapp-reactjs/master/images/project-figure-1.png)
+
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
