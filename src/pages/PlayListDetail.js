@@ -1,6 +1,8 @@
 import React , {Component} from 'react'
 import { faMusic } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import BabelLoading from 'react-loadingg/lib/BabelLoading'
+
 
 export class PlayListDetail extends Component {
    
@@ -60,7 +62,7 @@ export class PlayListDetail extends Component {
     render(){
         const { isLoading , playlist} = this.state;
         if (isLoading) {
-            return <p>Loading ...</p>;
+            return <BabelLoading style ={{margin: 'auto', left: '20%',right:0,top:0,bottom:0, position:'fixed'}} speed = {2} color = '#24c21b' />;
           }
        
         return(
@@ -74,7 +76,7 @@ export class PlayListDetail extends Component {
                         <h4>{playlist.type}</h4>
                         <h1> {playlist.name}</h1>
                         <h4>{playlist.description}</h4>
-                        <h4><strong>{playlist.owner}</strong> {playlist.likes} likes </h4>
+                        <h4><strong>{playlist.owner}</strong> • {playlist.likes} likes </h4>
                     </div>
                  </div>
                 <div className= "playlist-tracks-wrapper">
@@ -87,7 +89,7 @@ export class PlayListDetail extends Component {
                                 <h2>{this.millisToMinutesAndSeconds(track.track.duration_ms)}</h2>
                             </div>
                             
-                                <h4 >{track.track.artists[0].name} -  {track.track.album.name} </h4>
+                                <h4 >{track.track.artists[0].name} •  {track.track.album.name} </h4>
                         </li>
                     ))
                 }

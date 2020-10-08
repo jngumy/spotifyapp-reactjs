@@ -2,6 +2,8 @@ import React, {Component} from 'react'
 import {NowPlaying} from '../components/NowPlaying'
 import {TopTracks} from '../components/TopTracks'
 import {UserBar} from '../components/UserBar'
+import BabelLoading from 'react-loadingg/lib/BabelLoading'
+
 import '../css/App.css';
 import '../css/props.css'
 
@@ -20,7 +22,8 @@ export class Home extends Component{
                 device: 'Not checked',
                 timestamp: null
               },
-              top10songs : []
+              top10songs : [],
+              isLoading: true,
         }
     }
    
@@ -34,7 +37,7 @@ export class Home extends Component{
  
     spotifyApi.getMyTopTracks(queryParameters)
      .then((response)=>{
-            this.setState({top10songs: response.items})
+            this.setState({top10songs: response.items,  isLoading:false})
 
         },
         function (err) {
@@ -71,6 +74,10 @@ export class Home extends Component{
         console.log(this.state.top10songs);
     }
     render(){
+        const { isLoading } = this.state;
+        if (isLoading) {
+            return <BabelLoading style ={{margin: 'auto', left: '20%',right:0,top:0,bottom:0, position:'fixed'}} speed = {2} color = '#24c21b' />;
+          }
         return(
         <div  >
             <UserBar api = {this.props.api}/>
