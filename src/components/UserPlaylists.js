@@ -15,7 +15,9 @@ export const UserPlaylists = (props) => {
                                 <img alt = "img" src = {playlist.images[0].url} />
                             </div>
                             <div className ="card_title title-white">
-                                <h4><strong>{playlist.name}</strong></h4>
+                                <div style = {{'padding': '2px 0'}}>
+                                    <h4><strong>{playlist.name}</strong></h4>
+                                </div>
                             </div>
                 
                         </div>
