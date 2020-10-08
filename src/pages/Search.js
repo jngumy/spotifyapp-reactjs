@@ -43,7 +43,11 @@ export class Search extends Component {
       
         return(
           <div className = "container-search">
-            <SearchForm onResults = {this._handleResults} />
+
+            <h2>Search</h2>
+            {/* <SearchForm onResults = {this._handleResults} />*/
+            }
+            
           </div>
           
         )
