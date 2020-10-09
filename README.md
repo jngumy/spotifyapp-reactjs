@@ -7,6 +7,7 @@ For more information about the Spotify public API please go to https://developer
 Some preview:
 
 ![img](https://raw.githubusercontent.com/jngumy/spotifyapp-reactjs/master/images/project-figure-2.png)
+![img](https://raw.githubusercontent.com/jngumy/spotifyapp-reactjs/master/images/project-figure-5.png)
 ![img](https://raw.githubusercontent.com/jngumy/spotifyapp-reactjs/master/images/project-figure-3.png)
 ![img](https://raw.githubusercontent.com/jngumy/spotifyapp-reactjs/master/images/project-figure-4.png)
 ![img](https://raw.githubusercontent.com/jngumy/spotifyapp-reactjs/master/images/project-figure-1.png)
