@@ -3,7 +3,7 @@ import React from 'react'
 export const TopTracks = (props) => {
     const  {topSongs} = props;
     return(
-        <div>
+        <div className="">
                   <div style = {{ textAlign: 'left', width:'90%', marginLeft: 'auto', marginRight: 'auto'}}>
                     <h3  >User's Top 10 tracks</h3>
                   </div>

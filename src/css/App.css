@@ -136,16 +136,9 @@ body {
 }
 
 
-@media  screen and (max-width: 500px){
-  .sidebar {
-    width: 30%;
-    top: 0px;
-    left: 0px;
-    bottom: 0px; 
-    background-image: linear-gradient(rgb(49, 44, 44), black);
-  }
-  
-}
+
+
+
 
 .login-container {
   
@@ -212,7 +205,6 @@ body {
 .card {
   
   margin: 10px 0;
-  width: 200px;
   padding:10px;
   border-radius: 10px;
   cursor: pointer;
@@ -253,15 +245,6 @@ body {
   color: black;
 }
 
-@media all and (max-width: 450px) {
-  .card-list {
-    grid-template-columns: repeat(auto-fill, minmax(300px,1fr));
-  }
-
-  .card {
-    width: 100%;
-  }
-}
 
 .input-search {
   width: 100%;
@@ -389,4 +372,30 @@ body {
   opacity: 1;
   background-image: linear-gradient(rgb(29, 25, 29), rgb(41, 38, 38))  ;
   color:rgb(61, 212, 47);
+}
+
+
+
+
+@media  only screen and (max-width: 600px){
+  .sidebar {
+    width: 90px;
+    top: 0px;
+    left: 0px;
+    bottom: 0px; 
+  }
+
+  .cards-list { 
+    grid-template-columns: repeat(1,1fr);
+    width: 85%;
+  }
+
+}
+
+
+@media  only screen and (max-width: 768px){
+
+  .cards-list { 
+    grid-template-columns: repeat(1,1fr);
+  }
 }
